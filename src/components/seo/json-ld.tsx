@@ -1,4 +1,4 @@
-import { absoluteUrl, getSiteUrl } from "@/lib/site";
+import { absoluteUrl, getSiteUrl, LIVE_SITE_URL } from "@/lib/site";
 
 const DESCRIPTION =
   "Liam Coren is a Liferay Expert and Tinker. About, work, and contact.";
@@ -25,8 +25,9 @@ export function PersonJsonLd() {
       "REST APIs",
     ],
     sameAs: [
+      LIVE_SITE_URL,
       "https://www.linkedin.com/in/liam-coren/",
-      "https://github.com/liam-coren",
+      "https://github.com/liamcoren/liam-coren",
     ],
   };
 

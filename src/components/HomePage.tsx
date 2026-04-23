@@ -6,7 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { LiferayLogoMark } from "@/components/liferay-logo-mark";
 import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { ExternalLink, Github, Linkedin, Mail } from "lucide-react";
+import { LIVE_SITE_URL } from "@/lib/site";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -182,12 +183,22 @@ export function HomePage() {
                 className="rounded-none border-foreground uppercase tracking-wide text-foreground hover:bg-foreground hover:text-background"
               >
                 <a
-                  href="https://github.com/liam-coren"
+                  href="https://github.com/liamcoren/liam-coren"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Github className="h-4 w-4" aria-hidden />
                   GitHub
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="rounded-none border-foreground uppercase tracking-wide text-foreground hover:bg-foreground hover:text-background"
+              >
+                <a href={LIVE_SITE_URL} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="h-4 w-4" aria-hidden />
+                  Site
                 </a>
               </Button>
             </div>
