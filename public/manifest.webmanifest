@@ -1,0 +1,18 @@
+{
+  "name": "Liam Coren — Liferay Expert and Tinker",
+  "short_name": "Liam Coren",
+  "description": "Liam Coren is a Liferay Expert and Tinker.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/placeholder.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
